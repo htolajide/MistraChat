@@ -1,0 +1,30 @@
+{
+  "name": "mistrachat",
+  "version": "1.0.0",
+  "description": "A sample generative  AI chatbot with mistral ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/www.github.com/htolajide.git"
+  },
+  "keywords": [
+    "Model",
+    "Chatbot",
+    "LLM",
+    "Promp_Template"
+  ],
+  "type": "module",
+  "author": "Hammed Taofeek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/www.github.com/htolajide/issues"
+  },
+  "homepage": "https://github.com/www.github.com/htolajide#readme",
+  "dependencies": {
+    "@mistralai/mistralai": "^0.5.0",
+    "dotenv": "^16.4.5"
+  }
+}
