@@ -25,6 +25,7 @@
   "homepage": "https://github.com/www.github.com/htolajide#readme",
   "dependencies": {
     "@mistralai/mistralai": "^0.5.0",
+    "@supabase/supabase-js": "^2.44.2",
     "dotenv": "^16.4.5",
     "langchain": "^0.2.8"
   }
