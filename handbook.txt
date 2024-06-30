@@ -1,27 +1,27 @@
-One example is android.intent.action.TIME_TICK, this is a protected intent that can
+1. One example is android.intent.action.TIME_TICK, this is a protected intent that can
 only be sent by the system. It’s sent every 60 seconds and you can only listen to it if you
 registered via the Context.
 
-In earlier versions of Android, there were already a couple of broadcast that were
+2. In earlier versions of Android, there were already a couple of broadcast that were
 off limits from the manifest. At the time of this writing, Android 9 (or API level 28)
 came out. In this book, we’ve always used API level 23 as the target, but you will benefit
 from reading the behavior changes documents for each Android version. I’ve listed
 some links to the official Android documentation below. These documentations affect
 BroadcastReceivers in one way or another.
 
-• Android 9 (API 28) behavior changes. http://bit.ly/
+3. Android 9 (API 28) behavior changes. http://bit.ly/
 behaviorchanges9. Talks about all the changes in the API that
 developers should know if we want to target Android 9. This doc has
 something to say about BroadcastReceivers.
 
-• Background execution limits. http://bit.ly/bgexeclimit. This
+4. Background execution limits. http://bit.ly/bgexeclimit. This
 talks about the things your app can and can’t do while it’s running
 in the background. Don’t think that because you’re not in the UI
 thread, you can run around and do whatever you want. This doc talks
 about those limitations; it also talks about the limitations imposed on
 BroadcastReceivers.
 
-• BroadcastReceiver exceptions. http://bit.ly/
+5. BroadcastReceiver exceptions. http://bit.ly/
 broadcastexceptions. Starting with Android 8 (continuing to 9), all
 implicit broadcast actions are now off-limits from the manifest, with
 the exception of some. This document itemizes those actions that are
@@ -29,7 +29,7 @@ exempted. If you want to know which implicit broadcast actions can
 still be registered via the manifest, read this doc.
 Implicit vs. Explicit Broadcast Actions
 
-Android makes a distinction between implicit and explicit broadcast actions. It defines
+6. Android makes a distinction between implicit and explicit broadcast actions. It defines
 an explicit broadcast as something that target just one application, no matter how many
 other apps are listening for it. An explicit broadcast, on the other hand, can be heard
 by any app that registered for it. For our purpose and to make our lives simpler, the
